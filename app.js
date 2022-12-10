@@ -1,10 +1,8 @@
 const express = require('express');
 const port = process.env.port || 4000;
-const cookieParser = require('cookie-parser');
 const session = require('express-session');
 
 const app = express();
-app.use(cookieParser());
 app.use(session({
   'secret': '343ji43j4n3jn4jk3n',
   resave: true,
